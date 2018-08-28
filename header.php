@@ -55,7 +55,7 @@
 
 	<?php if ( $et_top_info_defined && ! $et_slide_header || is_customize_preview() ) : ?>
 		<?php ob_start(); ?>
-		<div class="_gradient-purple-dark" id="top-header"<?php echo $et_top_info_defined ? '' : 'style="display: none;"'; ?>>
+		<div id="top-header"<?php echo $et_top_info_defined ? '' : 'style="display: none;"'; ?>>
 			<div class="container clearfix">
 
 			<?php if ( $et_contact_info_defined ) : ?>
@@ -225,7 +225,7 @@
 	<?php endif; // true ==== $et_slide_header ?>
 
 	<?php ob_start(); ?>
-		<header id="main-header" data-height-onload="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>">
+		<header class="_gradient-purple-dark" id="main-header" data-height-onload="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>">
 			<div class="container clearfix et_menu_container">
 			<?php
 				$logo = ( $user_logo = et_get_option( 'divi_logo' ) ) && '' != $user_logo
