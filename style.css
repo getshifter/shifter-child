@@ -11,3 +11,12 @@
  
 /* =Theme customization starts here
 ------------------------------------------------------- */
+
+
+.et_pb_blog_grid .et_audio_content, .et_pb_blog_grid .et_main_video_container, .et_pb_blog_grid .et_pb_post .et_pb_slider, .et_pb_image_container {
+  margin: -40px -40px 30px;
+}
+
+.et_pb_pricing_heading {
+  margin-top: 30px;
+}
