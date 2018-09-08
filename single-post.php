@@ -148,7 +148,10 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 		</div> <!-- #content-area -->
 	</div> <!-- .container -->
 	<?php endif; ?>
+	
 </div> <!-- #main-content -->
+
+<?php echo do_shortcode('[et_pb_section global_module="4029"][/et_pb_section]');?>
 
 <?php
 

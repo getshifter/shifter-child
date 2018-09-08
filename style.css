@@ -265,7 +265,7 @@ div#et-top-navigation {
 .et_pb_blog_grid .et_main_video_container,
 .et_pb_blog_grid .et_pb_post .et_pb_slider,
 .et_pb_image_container {
-  margin: -40px -40px 30px;
+  margin: -20px -20px 0;
 }
 
 .et_pb_pricing_heading {
