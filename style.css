@@ -65,7 +65,7 @@ p {
 }
 
 .et_pb_post .entry-content {
-	padding-top: 0;
+  padding-top: 0;
 }
 
 .tablepress tbody td,
@@ -153,7 +153,7 @@ h1.entry-title {
   align-self: center;
 }
 
-.post-meta > div {
+.post-meta>div {
   flex-direction: column;
 }
 
