@@ -515,10 +515,14 @@ div#et-top-navigation {
 /* Pricing Toggle */
 
 .toggle-pricing a {
-  background-image: linear-gradient(90deg,#451d39 0%,#000000 100%)!important;
+  background-image: linear-gradient(90deg,#eee 0%,#eee 100%)!important;
+  color: #451d39 !important;
+  /* box-shadow: 0px 0px 0px 2px #451d39 inset; */
 }
 
 body[data-pricing="monthly"] a.pricing-monthly,
 body[data-pricing="annual"] a.pricing-annual {
   background-image: linear-gradient(90deg,#bc4e9c 0%,#f80759 100%)!important;
+  color: #fff !important;
+  /* box-shadow: none; */
 }
