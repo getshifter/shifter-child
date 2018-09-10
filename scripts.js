@@ -4,23 +4,16 @@ jQuery(document).ready(function( $ ) {
   
   $('.toggle-pricing a').on('click', function(e){
     e.preventDefault();
-    
-    // $('body').addClass('pricing-annual');
-
-    // $('body').toggleClass( $(this).attr('id') );
 
     $('body').attr('data-pricing', $('body').attr('data-pricing') == 'monthly' ? 'annual' : 'monthly')
-
-    // $( "#country-id > li" ).click(function() {
-    //   $('body').toggleClass( $(this).attr('id') );
-    // });  
-
-    // if ( jQuery(this).hasClass('active') ) {
-    //   alert('i am already active');
-    // } else {
-    //   jQuery('.switcher, .plans').toggleClass('active');
-    // }
     
   });
-	
+
+  $('.testimonials-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    arrows: false,
+    centerMode: true,
+  });
+
 });
