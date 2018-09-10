@@ -518,7 +518,7 @@ div#et-top-navigation {
 
 #top-menu {
 	display: inline-flex;
-  padding-left: 20%;
+  padding-left: 200px;
 }
 
 @media only screen and (max-width: 980px) {
