@@ -249,7 +249,7 @@ h3#reply-title {
 
 #main-header #logo {
   max-height: 40px;
-  top: -18px;
+  top: -16px;
   position: relative;
 }
 
@@ -509,6 +509,31 @@ div#et-top-navigation {
   .hidden-md-down {
     display: none !important;
   }
+}
+
+.et_menu_container > div,
+#top-menu, #top-menu-nav {
+	width: 100%;
+}
+
+#top-menu {
+	display: inline-flex;
+  padding-left: 20%;
+}
+
+@media only screen and (max-width: 980px) {
+  #top-menu {
+    display: none;
+  }  
+}
+
+#top-menu > li {
+	display: inline-flex;
+	align-items: center;
+}
+
+#top-menu .nav-spacer {
+  margin-left: auto;
 }
 
 /* Pricing Toggle */
