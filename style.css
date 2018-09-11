@@ -548,6 +548,11 @@ body[data-pricing="annual"] a.pricing-annual {
   color: #fff !important;
 }
 
+body[data-pricing="monthly"] .price-year,
+body[data-pricing="annual"] .price-month {
+  display: none;
+}
+
 /* 1:1 Overrides */
 #et_search_icon:hover,
 .mobile_menu_bar:before,
