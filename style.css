@@ -27,6 +27,20 @@ p {
   background-image: -o-linear-gradient(left, #451d39 0, #000 100%);
   background-image: linear-gradient(90deg, #451d39, #000);
   background-color: #451d39;
+  padding-bottom: 50px;
+}
+
+.single-post #main-content > .container {
+  padding-top: 20px;
+}
+
+.single-post #main-content .et_post_meta_wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.single-post #main-content .container:before {
+  display: none;
 }
 
 ._gradient-purple {
@@ -121,7 +135,7 @@ h1.entry-title {
   font-weight: 500;
   letter-spacing: 1px;
   color: #ffffff;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   font-weight: 300;
 }
 
@@ -131,6 +145,7 @@ h1.entry-title {
   justify-content: center;
   color: #fff;
   line-height: 1;
+  font-weight: 300;
 }
 
 .post-meta-author {
@@ -179,7 +194,7 @@ p.post-meta,
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
-  padding: 40px;
+  padding: 60px 40px;
 }
 
 ol.commentlist>li.comment,
