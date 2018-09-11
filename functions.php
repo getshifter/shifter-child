@@ -28,3 +28,10 @@ function slick_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'slick_styles');
+
+// Astroids
+// function astroids_enqueue_scripts() {
+//     wp_enqueue_script( 'astroids-scripts', get_stylesheet_directory_uri() . '/astroids.js', array( 'jquery' ));
+// }
+
+// add_action( 'wp_enqueue_scripts', 'astroids_enqueue_scripts' );
