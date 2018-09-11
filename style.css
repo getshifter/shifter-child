@@ -272,6 +272,11 @@ div#et-top-navigation {
   margin-top: 30px;
 }
 
+.pricing-table-wrap {
+  border: none;
+  overflow-x: scroll;
+}
+
 /* Colors */
 ._gradient-purple-dark {
   background-image: -webkit-gradient(linear, left top, right top, from(#451d39), to(#000));
