@@ -1,14 +1,21 @@
 <?php
-// Styles
-function child_theme_enqueue_styles() {
+// Parent Styles
+function parent_theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+}
+
+add_action( 'wp_enqueue_scripts', 'parent_theme_enqueue_styles' );
+
+// Child Styles
+function child_theme_enqueue_styles() {
+    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/assets/css/style.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_styles' );
 
 // Scripts
 function child_theme_enqueue_scripts() {
-    wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/scripts.js', array( 'jquery' ));
+    wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ));
 }
 
 add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_scripts' );
@@ -30,8 +37,31 @@ function slick_styles() {
 add_action('wp_enqueue_scripts', 'slick_styles');
 
 // Astroids
-// function astroids_enqueue_scripts() {
-//     wp_enqueue_script( 'astroids-scripts', get_stylesheet_directory_uri() . '/astroids.js', array( 'jquery' ));
-// }
+function astroids_enqueue_scripts() {
+    if(is_404()) {
+        wp_enqueue_script( 'astroids-scripts', get_stylesheet_directory_uri() . '/assets/js/astroids.js', array( 'jquery' ));
+    }
+}
 
-// add_action( 'wp_enqueue_scripts', 'astroids_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'astroids_enqueue_scripts' );
+
+
+// Remove Default Projects CPT
+function custom_unregister_theme_post_types() {
+    global $wp_post_types;
+
+      if ( isset( $wp_post_types["project"] ) ) {
+         unset( $wp_post_types[ "project" ] ); //UPDATED
+      }
+
+}
+
+add_action( 'init', 'custom_unregister_theme_post_types', 20 );
+
+
+// Micromodal
+function micromodal() {
+    wp_enqueue_script( 'micromodal', '//unpkg.com/micromodal/dist/micromodal.min.js');
+}
+
+add_action('wp_enqueue_scripts', 'micromodal');

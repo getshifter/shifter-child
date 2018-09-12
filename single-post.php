@@ -1,8 +1,4 @@
-<?php
-
-get_header();
-
-?>
+<?php get_header(); ?>
 
 <div id="main-content">
 	<div class="container">
