@@ -29,4 +29,8 @@ jQuery(document).ready(function( $ ) {
     ]
   });
 
+  $(window).on('orientationchange', function() {
+    $('.testimonials-slider').slick('resize');
+  });
+
 });

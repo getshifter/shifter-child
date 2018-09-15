@@ -378,7 +378,7 @@ div#et-top-navigation {
     display: block !important;
     top: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
     z-index: 9998;
     overflow: hidden;
     border-top: none;
@@ -413,9 +413,13 @@ div#et-top-navigation {
   }
 
   #mobile_menu {
-    left: -180px;
-    top: -15px;
     transition: all .3s cubic-bezier(.8, -.4, .2, 1) 0s, opacity .1s ease;
+    top: 70px;
+  }
+
+  .mobile_menu_bar:before {
+    padding: 5px 6px 7px;
+    line-height: 100%;
   }
 
   .mobile_nav.closed #mobile_menu {
@@ -444,7 +448,9 @@ div#et-top-navigation {
 
 @media only screen and (max-width: 980px) {
   .mobile_menu_bar {
-    position: absolute;
+    position: fixed;
+    right: 10%;
+    top: 75px;
   }
 
   .et_header_style_split .mobile_menu_bar,
@@ -455,7 +461,8 @@ div#et-top-navigation {
 
 @media only screen and (max-width: 980px) {
   #mobile_menu {
-    width: 225px;
+    width: 80%;
+    margin-left: 10%
   }
 }
 
