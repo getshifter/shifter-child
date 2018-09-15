@@ -614,3 +614,19 @@ body #page-container .et_pb_button_0 {
 #game-info p {
   font-size: 14px;
 }
+
+.testimonials-slider .slick-slide {
+  margin: 0 15px !important;
+}
+
+.testimonials-slider .slick-list {
+  overflow: visible !important;
+}
+
+.testimonial-item {
+  padding: 30px;
+}
+
+.testimonial-item * {
+  text-align: center !important;
+}

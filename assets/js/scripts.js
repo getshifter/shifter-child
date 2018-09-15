@@ -14,6 +14,10 @@ jQuery(document).ready(function( $ ) {
     slidesToShow: 3,
     arrows: false,
     centerMode: true,
+    centerPadding: '30px',
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false
   });
 
 });

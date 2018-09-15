@@ -60,8 +60,8 @@ add_action( 'init', 'custom_unregister_theme_post_types', 20 );
 
 
 // Micromodal
-function micromodal() {
-    wp_enqueue_script( 'micromodal', '//unpkg.com/micromodal/dist/micromodal.min.js');
-}
+// function micromodal() {
+//     wp_enqueue_script( 'micromodal', 'https://unpkg.com/micromodal@0.3.2/dist/micromodal.min.js');
+// }
 
-add_action('wp_enqueue_scripts', 'micromodal');
+// add_action('wp_enqueue_scripts', 'micromodal');
