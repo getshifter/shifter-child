@@ -11,13 +11,29 @@ jQuery(document).ready(function( $ ) {
 
   $('.testimonials-slider').slick({
     infinite: true,
-    slidesToShow: 3,
     arrows: false,
     centerMode: true,
     centerPadding: '30px',
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1405,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
 });
