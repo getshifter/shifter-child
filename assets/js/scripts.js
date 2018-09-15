@@ -20,13 +20,6 @@ jQuery(document).ready(function( $ ) {
     slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 1405,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
         breakpoint: 980,
         settings: {
           slidesToShow: 1,

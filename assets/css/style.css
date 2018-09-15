@@ -631,3 +631,28 @@ body #page-container .et_pb_button_0 {
   text-align: center !important;
   font-weight: 300;
 }
+
+.logo-soup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-soup > div {
+  flex: 1 0 15%;
+}
+
+@media only screen and (max-width: 980px) {
+  .logo-soup > div {
+    flex: 1 0 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-soup > div {
+    flex: 1 0 50%;
+  }
+}
+
+.logo-soup img {
+  padding: 30px 15px !important;
+}
