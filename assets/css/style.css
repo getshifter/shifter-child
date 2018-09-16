@@ -182,7 +182,7 @@ p.post-meta,
   text-transform: uppercase;
 }
 
-.single .et_pb_post {
+.single #main-content .et_pb_post {
   margin-bottom: 27px;
   background-color: #fff;
   border-radius: 24px;
@@ -671,4 +671,10 @@ body #page-container .et_pb_button_0 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.related-posts .post-meta {
+  justify-content: left;
 }

@@ -4,24 +4,19 @@
 	<div class="container">
 		<div id="content-area" class="clearfix">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php if (et_get_option('divi_integration_single_top') <> '' && et_get_option('divi_integrate_singletop_enable') == 'on') echo(et_get_option('divi_integration_single_top')); ?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' ); ?>>
-						<div class="et_post_meta_wrapper">
+			<div class="et_post_meta_wrapper">
 							<h1 class="entry-title balance-text"><?php the_title(); ?></h1>
-
 							<div class="post-meta">
-									<div><?php echo get_the_date() ?></div>
-									<?php
-									$categories = wp_get_post_categories( get_the_ID() );
-									foreach($categories as $c) {
-										$cat = get_category( $c );
-										$cat_id = get_cat_ID( $cat->name );
-										echo '<div>'.$cat->name.'</div>';
-									} ?>
-								
-								
+								<div><?php echo get_the_date() ?></div>
+								<?php
+								$categories = wp_get_post_categories( get_the_ID() );
+								foreach($categories as $c) {
+									$cat = get_category( $c );
+									$cat_id = get_cat_ID( $cat->name );
+									echo '<div>'.$cat->name.'</div>';
+								} ?>
 							</div>
-
+				<article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' ); ?>>
 					<div class="entry-content">
 					<?php
 						do_action( 'et_before_content' );
@@ -67,6 +62,10 @@
 		</div>
 	</div>
 </div> <!-- #main-content -->
+
+<div class="related-posts">
+	<?php echo do_shortcode('[et_pb_section global_module="4781"][/et_pb_section]');?>
+</div>
 
 <?php echo do_shortcode('[et_pb_section global_module="4029"][/et_pb_section]');?>
 
