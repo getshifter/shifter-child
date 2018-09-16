@@ -41,7 +41,31 @@
 		</div> <!-- #content-area -->
 
 	</div> <!-- .container -->
-	
+
+	<div class="container">
+		<div class="single-post__nav">
+			<div class="single-post__nav-prev">
+			<?php
+				$prev_post = get_previous_post();
+				if($prev_post) {
+					// $prev_title = strip_tags(str_replace('"', '', $prev_post->post_title));
+					$prev_title = 'Previous';
+					echo "\t" . '<a rel="prev" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_title. '" class="_gradient-btn">&larr; '. $prev_title . '</a>' . "\n";
+				}
+			?>
+			</div>
+			<div class="single-post__nav-next">
+				<?php
+					$prev_post = get_next_post();
+					if($prev_post) {
+						// $prev_title = strip_tags(str_replace('"', '', $prev_post->post_title));
+						$prev_title = 'Next';
+						echo "\t" . '<a rel="next" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_title. '" class="_gradient-btn">'. $prev_title . ' &rarr;</a>' . "\n";
+					}
+				?>
+			</div>
+		</div>
+	</div>
 </div> <!-- #main-content -->
 
 <?php echo do_shortcode('[et_pb_section global_module="4029"][/et_pb_section]');?>
