@@ -418,12 +418,13 @@ div#et-top-navigation {
 
   #mobile_menu {
     transition: all .3s cubic-bezier(.8, -.4, .2, 1) 0s, opacity .1s ease;
-    top: 70px;
+    top: 30px;
   }
 
   .mobile_menu_bar:before {
-    padding: 5px 6px 7px;
-    line-height: 100%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
   }
 
   .mobile_nav.closed #mobile_menu {
@@ -444,9 +445,6 @@ div#et-top-navigation {
     content: '\4d';
     z-index: 9999;
     color: #451d39 !important;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
   }
 }
 
@@ -454,7 +452,7 @@ div#et-top-navigation {
   .mobile_menu_bar {
     position: fixed;
     right: 10%;
-    top: 75px;
+    top: 30px;
   }
 
   .et_header_style_split .mobile_menu_bar,
