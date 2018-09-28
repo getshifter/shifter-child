@@ -75,13 +75,9 @@ add_action( 'wp_head',     'remove_WordPress_Dashicons', 100 );
 
 // Use Google jQuery
 function replace_jquery() {
-	if (!is_admin()) {
-		// comment out the next two lines to load the local copy of jQuery
-		wp_deregister_script('jquery');
-		wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', false, '2.2.4');
-        wp_enqueue_script('jquery');
-
-	}
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', false, '2.2.4');
+    wp_enqueue_script('jquery');
 }
 
 add_action('init', 'replace_jquery');
