@@ -692,6 +692,8 @@ body #page-container .et_pb_button_0 {
   max-width: 960px;
   margin: 0 auto;
   margin-top: -12vw;
+  z-index: 1;
+  position: relative;
 }
 
 .blog-archive__item {
