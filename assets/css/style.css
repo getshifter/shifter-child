@@ -678,3 +678,84 @@ body #page-container .et_pb_button_0 {
 .related-posts .post-meta {
   justify-content: left;
 }
+
+
+.blog-archive-wrap {
+  background-color: #f8f9fa;
+  padding: 0 30px;
+}
+
+.blog-archive {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: -12vw;
+}
+
+.blog-archive__item {
+  background-color: #fff;
+  width: 32%;
+  margin-bottom: 2%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-archive__item:last-of-type {
+  margin-right: auto;
+  margin-left: 2%;
+}
+
+.blog-archive__item:after {
+  /* content: ''; */
+  /* display: inline-block; */
+}
+
+.blog-archive__item-meta {
+  padding: 30px 30px 60px;
+}
+
+.blog-archive__item-title {
+  color: #451d39;  
+  font-size: 1.15rem;
+}
+
+.blog-archive__item-date {
+  font-weight: 300;
+  font-size: .825rem;
+  color: #451d39;
+}
+
+.blog-archive__img {
+  /* position: absolute; */
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+  .blog-archive__item {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-archive__item {
+    width: 100%;
+  }
+}
+
+.text-break {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
